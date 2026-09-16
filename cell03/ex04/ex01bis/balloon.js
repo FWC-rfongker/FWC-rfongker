@@ -1,0 +1,1 @@
+$(function(){const colors=["red","green","blue"];let size=200,index=0,$b=$("#balloon");function update(){$b.css({width:size,height:size,backgroundColor:colors[index]});}$b.on("click",function(){size+=10;index=(index+1)%3;if(size>420){size=200;index=0;}update();}).on("mouseleave",function(){size=Math.max(200,size-5);index=(index+2)%3;update();});});
