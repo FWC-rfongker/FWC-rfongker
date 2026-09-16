@@ -1,0 +1,1 @@
+$(function(){$("#change-color").on("click",function(){const c="rgb("+Math.floor(Math.random()*256)+","+Math.floor(Math.random()*256)+","+Math.floor(Math.random()*256)+")";$("body").css("background-color",c);});});
