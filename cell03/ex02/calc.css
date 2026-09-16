@@ -1,3 +1,37 @@
+
+/* Calculator layout: left member, operator, right member, then submit */
+.calculator {
+  width: min(92%, 820px);
+}
+
+form {
+  grid-template-columns: 1fr 100px 1fr auto;
+  gap: 12px;
+  align-items: end;
+}
+
+input[type="submit"] {
+  width: auto;
+  padding-inline: 22px;
+}
+
+@media (max-width: 560px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+  }
+}
+/* Required calculator order: left, operator, right, submit */
+.calculator { width: min(92%, 820px) !important; }
+form { grid-template-columns: 1fr 100px 1fr auto !important; gap: 12px !important; align-items: end !important; }
+input[type="submit"] { width: auto !important; padding-inline: 22px !important; }
+@media (max-width: 560px) {
+  form { grid-template-columns: 1fr !important; }
+  input[type="submit"] { width: 100% !important; }
+}
 * {
   box-sizing: border-box;
 }
