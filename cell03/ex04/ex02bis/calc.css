@@ -1,0 +1,1 @@
+body{display:grid;min-height:100vh;margin:0;place-items:center}form{display:grid;grid-template-columns:1fr 90px 1fr auto;gap:10px}input,select{padding:11px}@media(max-width:560px){form{grid-template-columns:1fr}}
