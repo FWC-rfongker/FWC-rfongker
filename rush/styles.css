@@ -96,8 +96,11 @@ h3 { letter-spacing: -.025em; }
   .profile-card { flex-direction: column; }
   .profile-card img, .profile-card-content { width: 100%; }
   .profile-card img { min-height: 230px; height: 230px; }
-  .site-nav { align-items: flex-start; flex-direction: column; padding-block: .65rem; }
-  .nav-links { justify-content: start; }
+  .site-nav { display: block; padding-block: .65rem; }
+  .brand { display: block; margin-bottom: .55rem; }
+  .nav-links { flex-wrap: nowrap; justify-content: start; width: 100%; overflow-x: auto; padding-bottom: .2rem; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { flex: 0 0 auto; white-space: nowrap; }
   .hero-grid { grid-template-columns: 1fr; }
   .profile-image { width: min(82%, 320px); justify-self: center; }
   .project-card img { height: 220px; }
