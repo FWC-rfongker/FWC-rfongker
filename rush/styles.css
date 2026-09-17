@@ -19,21 +19,23 @@ h3 { letter-spacing: -.025em; }
 .lead, .hero-copy { color: var(--gray); font-size: clamp(1.15rem, 2vw, 1.45rem); line-height: 1.45; }
 
 /* Summary page */
-.landing-shell { width: min(1280px, calc(100% - 2rem)); margin: 0 auto; padding: clamp(4.5rem, 12vw, 10rem) 0 2rem; }
-.intro { width: min(820px, 100%); margin: 0 auto clamp(2.5rem, 6vw, 4.5rem); }
-.intro h1 { margin-bottom: 1.25rem; }
-.landing-title { font-size: clamp(2.8rem, 6vw, 5rem); line-height: 1; }
-.intro .lead { max-width: 34rem; font-size: clamp(1rem, 1.6vw, 1.18rem); }
-.profile-links { margin: 0; }
-.profile-card { position: relative; display: flex; min-height: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 1rem; background: #f1f1f3; text-decoration: none; transition: transform .2s ease, box-shadow .2s ease; }
+.landing-shell { width: min(1120px, calc(100% - 2rem)); margin: 0 auto; padding: clamp(3.75rem, 9vw, 7rem) 0 3rem; }
+.intro { width: min(720px, 100%); margin: 0 auto clamp(2.25rem, 5vw, 3.5rem); }
+.intro .eyebrow { margin-bottom: .65rem; color: var(--gray); }
+.intro h1 { margin-bottom: .8rem; }
+.landing-title { font-size: clamp(3rem, 7vw, 5.25rem); line-height: .95; }
+.intro .lead { max-width: 38rem; margin-inline: auto; font-size: clamp(1rem, 1.6vw, 1.12rem); }
+.profile-links { margin: 0; align-items: stretch; }
+.profile-links > div { display: flex; }
+.profile-card { position: relative; display: flex; width: 100%; height: 340px; overflow: hidden; border: 1px solid var(--line); border-radius: 1rem; background: #f1f1f3; text-decoration: none; transition: transform .2s ease, box-shadow .2s ease; }
 .profile-card:hover { color: inherit; transform: translateY(-3px); box-shadow: 0 10px 24px rgb(0 0 0 / .1); }
 .profile-card-alt { background: #f5f5f7; }
-.profile-card img { display: block; width: 43%; min-height: 260px; object-fit: cover; object-position: center 25%; }
+.profile-card img { display: block; width: 46%; height: 100%; object-fit: cover; object-position: center 25%; }
 .profile-card-alt img { object-fit: cover; object-position: center 18%; }
-.profile-card-content { display: flex; flex-direction: column; width: 57%; padding: 1.75rem; color: var(--black); }
+.profile-card-content { display: flex; flex: 1; flex-direction: column; min-width: 0; padding: 1.75rem; color: var(--black); }
 .profile-card-alt .profile-card-content { color: var(--black); }
 .card-label { font-size: .78rem; font-weight: 600; letter-spacing: .08em; }
-.card-name { margin-top: .4rem; font-size: 1.65rem; font-weight: 700; letter-spacing: -.04em; }
+.card-name { margin-top: .45rem; font-size: clamp(1.45rem, 2.5vw, 1.8rem); font-weight: 700; letter-spacing: -.04em; line-height: 1.05; }
 .card-action { margin-top: auto; font-size: 1rem; font-weight: 500; }
 
 /* Portfolio pages */
@@ -90,7 +92,7 @@ h3 { letter-spacing: -.025em; }
 @media (max-width: 640px) {
   h1 { font-size: clamp(3.25rem, 15vw, 5rem); }
   .landing-shell { width: min(100% - 1.25rem, 1280px); padding-top: 4.5rem; }
-  .profile-card { min-height: 420px; }
+  .profile-card { height: auto; min-height: 420px; }
   .profile-card { flex-direction: column; }
   .profile-card img, .profile-card-content { width: 100%; }
   .profile-card img { min-height: 230px; height: 230px; }
