@@ -63,6 +63,8 @@ h3 { letter-spacing: -.025em; }
 .project-card div { padding: 1.55rem; }
 .project-card h3 { font-size: 1.25rem; font-weight: 650; }
 .project-card p { margin-bottom: 0; color: var(--gray); line-height: 1.55; }
+.project-card .image-credit { margin-top: .85rem; font-size: .76rem; line-height: 1.4; }
+.image-credit a { color: var(--blue); }
 .project-card-text { display: grid; place-items: center; min-height: 220px; background: #1d1d1f; color: white; }
 .project-card-text p { color: #d2d2d7; }
 .feature-card { display: grid; grid-template-columns: minmax(230px, .9fr) 1.1fr; overflow: hidden; border-radius: 1.35rem; background: var(--surface); }
