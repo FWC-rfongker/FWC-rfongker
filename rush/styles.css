@@ -41,8 +41,9 @@ h3 { letter-spacing: -.025em; }
 /* Portfolio pages */
 .site-nav { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 3.2rem; padding: .6rem max(1.25rem, calc((100% - 1000px) / 2)); border-bottom: 1px solid rgb(210 210 215 / .65); background: rgb(255 255 255 / .76); backdrop-filter: saturate(180%) blur(20px); }
 .brand { font-size: .9rem; font-weight: 650; letter-spacing: -.01em; text-decoration: none; }
-.nav-links { display: flex; flex-wrap: wrap; justify-content: end; gap: .7rem 1.2rem; }
-.nav-links a { color: var(--black); font-size: .78rem; text-decoration: none; }
+.nav-links { display: flex; flex-wrap: nowrap; justify-content: end; min-width: 0; gap: .7rem 1.2rem; overflow-x: auto; scrollbar-width: none; }
+.nav-links::-webkit-scrollbar { display: none; }
+.nav-links a { flex: 0 0 auto; color: var(--black); font-size: .78rem; text-decoration: none; white-space: nowrap; }
 .nav-links a:hover { color: var(--blue); }
 .hero { overflow: hidden; padding: clamp(3.5rem, 8vw, 6.5rem) 0 clamp(3rem, 6vw, 5rem); background: var(--surface); }
 .hero-alt { background: #fbfbfd; }
@@ -98,9 +99,7 @@ h3 { letter-spacing: -.025em; }
   .profile-card img { min-height: 230px; height: 230px; }
   .site-nav { display: block; padding-block: .65rem; }
   .brand { display: block; margin-bottom: .55rem; }
-  .nav-links { flex-wrap: nowrap; justify-content: start; width: 100%; overflow-x: auto; padding-bottom: .2rem; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
-  .nav-links::-webkit-scrollbar { display: none; }
-  .nav-links a { flex: 0 0 auto; white-space: nowrap; }
+  .nav-links { justify-content: start; width: 100%; padding-bottom: .2rem; -webkit-overflow-scrolling: touch; }
   .hero-grid { grid-template-columns: 1fr; }
   .profile-image { width: min(82%, 320px); justify-self: center; }
   .project-card img { height: 220px; }
